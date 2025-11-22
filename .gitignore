@@ -1,0 +1,28 @@
+# Bytecode & cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+.venv/
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+
+# Sistem OS
+.DS_Store
+Thumbs.db
+
+# Jupyter & sejenis
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# File sementara
+*.tmp
+*.bak
