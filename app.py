@@ -20,13 +20,20 @@ unique_values = {col: sorted(df[col].unique()) for col in categorical_columns}
 # Encoding
 encode_gender = {"female": 0, "male": 1}
 encode_race = {"group A": 0, "group B": 1, "group C": 2, "group D": 3, "group E": 4}
+
 encode_parent = {
-    "some high school": 0, "high school": 1,
-    "some college": 2, "associate's degree": 3,
-    "bachelor's degree": 4, "master's degree": 5
+    "associate's degree": 0,
+    "bachelor's degree": 1,
+    "high school": 2,
+    "master's degree": 3,
+    "some college": 4,
+    "some high school": 5
 }
+
 encode_lunch = {"free/reduced": 0, "standard": 1}
-encode_prep = {"none": 0, "completed": 1}
+
+encode_prep = {"completed": 0, "none": 1}
+
 
 
 @app.route("/")
